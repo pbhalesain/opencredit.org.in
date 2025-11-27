@@ -8,6 +8,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "OpenCredit - Open Source Credit Scoring for India",
+   openGraph: {
+    images: ['/api/og?title=Democratizing Credit Access'],
+  },
   description:
     "Democratizing access to credit through transparent, UPI-based credit assessment. Open source credit scoring platform for merchants, MSMEs, and consumers.",
   keywords: ["open source", "credit scoring", "UPI", "India", "MSME", "financial inclusion", "transparent lending"],
