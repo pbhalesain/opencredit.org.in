@@ -145,7 +145,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-sm text-background/50">
-            © 2025 OpenCredit Initiative. Licensed under GNU Lesser General Public License.
+            © 2025 OpenCredit Initiative. Licensed under Apache 2.0 License.
           </div>
           <div className="flex items-center gap-6 text-sm text-background/50">
             <Link href="/privacy" className="hover:text-background transition-colors">

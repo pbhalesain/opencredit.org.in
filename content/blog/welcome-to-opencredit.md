@@ -60,4 +60,4 @@ Together, we can build a more inclusive financial future for India.
 
 ---
 
-*The OpenCredit initiative is licensed under the GNU Lesser General Public License and operates as a non-profit organization focused on financial inclusion.*
+*The OpenCredit initiative is licensed under the Apache 2.0 License and operates as a non-profit organization focused on financial inclusion.*
