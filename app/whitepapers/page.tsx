@@ -5,11 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { FileText, Download, ExternalLink, Calendar, User, BookOpen, FlaskConical, Github } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata = {
-  title: "Whitepapers & Research | OpenCredit",
-  description: "Technical whitepapers, research papers, and impact studies from the OpenCredit initiative.",
-}
+export const metadata = generatePageMetadata({
+  title: "Whitepapers & Research",
+  description:
+    "Technical whitepapers, research papers, and impact studies from the OpenCredit initiative. Open-access research on credit scoring and financial inclusion.",
+  path: "/whitepapers",
+})
 
 const whitepapers = [
   {

@@ -3,11 +3,14 @@ import { Footer } from "@/components/footer"
 import { PageHeader } from "@/components/page-header"
 import { Card, CardContent } from "@/components/ui/card"
 import { Heart, Users, MessageSquare, Shield, AlertTriangle, Scale } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata = {
-  title: "Code of Conduct | OpenCredit",
-  description: "Our commitment to providing a welcoming and inclusive environment for all contributors.",
-}
+export const metadata = generatePageMetadata({
+  title: "Code of Conduct",
+  description:
+    "Our commitment to providing a welcoming and inclusive environment for all contributors to the OpenCredit initiative.",
+  path: "/code-of-conduct",
+})
 
 const values = [
   {

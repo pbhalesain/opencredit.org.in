@@ -28,6 +28,9 @@ export function Header() {
             <Link href="/#algorithm" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Algorithm
             </Link>
+            <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Blog
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Resources
@@ -39,6 +42,12 @@ export function Header() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/whitepapers">Whitepapers</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/milestones">Milestones</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/advocacy">Advocacy</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/contributing">Contributing</Link>
@@ -85,6 +94,9 @@ export function Header() {
               >
                 Algorithm
               </Link>
+              <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Blog
+              </Link>
               <div className="pl-4 flex flex-col gap-2 border-l border-border">
                 <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Resources</span>
                 <Link href="/docs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -95,6 +107,18 @@ export function Header() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Whitepapers
+                </Link>
+                <Link
+                  href="/milestones"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Milestones
+                </Link>
+                <Link
+                  href="/advocacy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Advocacy
                 </Link>
                 <Link
                   href="/contributing"

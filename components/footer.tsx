@@ -7,11 +7,15 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
-            <div className="flex items-center">
-              <OpenCreditFooterLogo className=" justify-center " />
-            </div>
+            <div className="flex items-center gap-2 mb-4">
+  <OpenCreditFooterLogo />
+  <div className="flex flex-col items-center">
+    <span className="font-semibold text-lg">Open Credit Initiative</span>
+    <span className="text-sm text-gray-200 justify-center">पत सुलभता, राष्ट्रोन्नता.</span>
+  </div>
+</div>
             <p className="text-background/70 leading-relaxed max-w-md">
               A non-profit, open-source initiative to democratize credit access in India through transparent, UPI-based
               credit assessment.
@@ -69,8 +73,34 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/whitepapers#research" className="hover:text-background transition-colors">
-                  Research
+                <Link href="/blog" className="hover:text-background transition-colors">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Initiative</h4>
+            <ul className="space-y-2 text-background/70">
+              <li>
+                <Link href="/milestones" className="hover:text-background transition-colors">
+                  Milestones
+                </Link>
+              </li>
+              <li>
+                <Link href="/advocacy" className="hover:text-background transition-colors">
+                  Advocacy
+                </Link>
+              </li>
+              <li>
+                <Link href="/#roadmap" className="hover:text-background transition-colors">
+                  Roadmap
+                </Link>
+              </li>
+              <li>
+                <Link href="/#impact" className="hover:text-background transition-colors">
+                  Impact
                 </Link>
               </li>
             </ul>
@@ -114,7 +144,9 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-background/50">© 2025 OpenCredit Initiative. Licensed under Apache 2.0 License.</div>
+          <div className="text-sm text-background/50">
+            © 2025 OpenCredit Initiative. Licensed under GNU Lesser General Public License.
+          </div>
           <div className="flex items-center gap-6 text-sm text-background/50">
             <Link href="/privacy" className="hover:text-background transition-colors">
               Privacy Policy

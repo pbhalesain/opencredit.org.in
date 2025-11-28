@@ -17,11 +17,14 @@ import {
   CheckCircle,
   Github,
 } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata = {
-  title: "Contributing | OpenCredit",
-  description: "Learn how to contribute to OpenCredit and help democratize credit access in India.",
-}
+export const metadata = generatePageMetadata({
+  title: "Contributing",
+  description:
+    "Learn how to contribute to OpenCredit and help democratize credit access in India. Code contributions, documentation, research, and community support.",
+  path: "/contributing",
+})
 
 const contributionTypes = [
   {

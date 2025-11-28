@@ -1,11 +1,14 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PageHeader } from "@/components/page-header"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata = {
-  title: "Privacy Policy | OpenCredit",
-  description: "Privacy policy for the OpenCredit platform - how we handle and protect your data.",
-}
+export const metadata = generatePageMetadata({
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for the OpenCredit platform - how we handle and protect your data in compliance with DPDP Act 2023.",
+  path: "/privacy",
+})
 
 export default function PrivacyPage() {
   return (

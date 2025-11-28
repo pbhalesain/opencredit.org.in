@@ -1,11 +1,13 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PageHeader } from "@/components/page-header"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata = {
-  title: "Terms of Service | OpenCredit",
-  description: "Terms of service for using the OpenCredit platform and services.",
-}
+export const metadata = generatePageMetadata({
+  title: "Terms of Service",
+  description: "Terms of service for using the OpenCredit platform and services. Open source under Apache 2.0 license.",
+  path: "/terms",
+})
 
 export default function TermsPage() {
   return (
