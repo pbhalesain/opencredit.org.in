@@ -67,7 +67,7 @@ export function OpenSource() {
             </div>
             <div className="flex items-center gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold">GNU Lesser General Public  </div>
+                <div className="text-2xl font-bold">Apache 2.0  </div>
                 <div className="text-sm text-background/70">License</div>
               </div>
               <Button variant="secondary" size="lg" asChild>
